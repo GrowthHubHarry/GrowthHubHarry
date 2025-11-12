@@ -1,0 +1,159 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Growth Hug Harry — Google Ads Audit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#FFA500;
+      --primary-gradient: linear-gradient(135deg, #FFA500 0%, #FFB84D 100%);
+      --bg:#FFFFFF;
+      --text:#1a1a1a;
+      --muted:#555;
+      --container:1100px;
+      font-family:'Playfair Display', serif;
+    }
+    *{box-sizing:border-box; margin:0; padding:0}
+    body{background:var(--bg); color:var(--text); line-height:1.6}
+    .wrap{max-width:var(--container); margin:0 auto; padding:36px}
+
+```
+header{display:flex; align-items:center; justify-content:space-between; padding:20px 0}
+.brand{display:flex; align-items:center; gap:16px}
+.logo img{width:70px; height:70px; object-fit:contain; border-radius:50%;}
+nav a{margin-left:24px; text-decoration:none; color:var(--muted); font-weight:600; transition:color 0.3s}
+nav a:hover{color:var(--primary)}
+
+.hero{display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; padding:60px 0; position:relative;}
+.hero-content{flex:1; min-width:320px;}
+.headline{font-size:48px; font-weight:900; background:var(--primary-gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:20px; line-height:1.2;}
+.sub{font-size:22px; margin-bottom:30px; color:var(--muted); font-family:'Roboto', sans-serif;}
+.cta-row{display:flex; gap:16px; flex-wrap:wrap;}
+.btn{padding:18px 32px; background:var(--primary-gradient); color:#fff; border:none; border-radius:25px; font-weight:700; cursor:pointer; transition:transform 0.3s, box-shadow 0.3s; text-decoration:none; display:inline-block;}
+.btn:hover{transform:scale(1.05); box-shadow:0 15px 35px rgba(255,165,0,0.5);}
+.btn-ghost{padding:16px 28px; border:2px solid var(--primary); border-radius:25px; text-decoration:none; color:var(--primary); font-weight:700; transition:all 0.3s; display:inline-block;}
+.btn-ghost:hover{background:var(--primary); color:#fff; transform:scale(1.05);}
+
+.video-card{flex:1; min-width:320px; border-radius:20px; overflow:hidden; box-shadow:0 15px 50px rgba(255,165,0,0.3);}
+.video-card video{width:100%; height:100%; border-radius:20px;}
+
+section{padding:80px 0;}
+section h2{font-size:36px; background:var(--primary-gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:24px;}
+section p{font-size:18px; color:var(--text); max-width:800px; margin-bottom:16px;}
+
+footer{padding:40px 0; text-align:center; color:var(--muted); font-size:16px;}
+
+@media(max-width:920px){
+  .hero{flex-direction:column;}
+  .headline{font-size:36px;}
+  .sub{font-size:20px;}
+}
+```
+
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
+  <!-- Google Calendar Appointment Scheduling -->
+  <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+  <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+  <script>
+    window.addEventListener('load', function() {
+      var target = document.getElementById('google-calendar-button');
+      if(target){
+        setTimeout(function(){
+          calendar.schedulingButton.load({
+            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z8xm09LOp6P8V6MXb2_3ZfrDYGHhQkHiV9hbrIoqjJDqFuwTwDSqPReSnzabreM3lSK7h_Xyn?gv=true',
+            color: '#FFA500',
+            label: 'Book Your Discovery Call',
+            target: target
+          });
+        }, 1000);
+      }
+      ScrollReveal().reveal('.headline', {origin: 'top', distance:'50px', duration:1000, delay:200});
+      ScrollReveal().reveal('.sub', {origin: 'bottom', distance:'30px', duration:1000, delay:400});
+      ScrollReveal().reveal('.cta-row', {origin: 'bottom', distance:'20px', duration:1000, delay:600});
+      ScrollReveal().reveal('.video-card', {origin:'right', distance:'50px', duration:1200, delay:800});
+    });
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">
+          <img src="https://drive.google.com/uc?export=download&id=1cSEnrDRxe-Sfy2uiyIHtep84PG1TwtSL" alt="Growth Hug Harry Logo">
+        </div>
+        <div style="font-weight:900; font-family:'Playfair Display', serif; font-size:20px; color:#FFA500;">Growth Hug Harry</div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+```
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="headline">Stop Wasting Money on Google Ads — Turn Every Dollar Into Real Leads</h1>
+    <p class="sub">I'm Harry from Growth Hug — I audit, optimize, and manage your Google Ads so you get measurable results.</p>
+    <div class="cta-row">
+      <div id="google-calendar-button"></div>
+      <a href="tel:+16473545557" class="btn-ghost">Call: 647-354-5557</a>
+      <a href="mailto:Harrygrowthhub@yahoo.com" class="btn-ghost">Email: Harrygrowthhub@yahoo.com</a>
+    </div>
+  </div>
+  <div class="video-card">
+    <video src="https://drive.google.com/uc?export=download&id=1Z6loouVgLeLo9xLANdpp5MwarFagzkdE" autoplay muted loop controls></video>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <h2>Why Your Google Ads Aren't Performing</h2>
+  <p>Most businesses waste thousands on Google Ads due to outdated strategies, poor keyword research, or under-optimized campaigns. I analyze every corner of your account to uncover the hidden issues.</p>
+  <p>This is not a generic tick-box audit. Each Ads Audit is tailored and hands-on, ensuring every recommendation is actionable.</p>
+</section>
+
+<!-- Process Section -->
+<section id="process">
+  <h2>Our Detailed Ads Audit & 30-Day Management</h2>
+  <p>Step 1: Book your discovery call to determine if the Ads Audit is the right fit.</p>
+  <p>Step 2: We audit your Google Ads account in extreme detail.</p>
+  <p>Step 3: Receive a comprehensive report with actionable recommendations.</p>
+  <p>Step 4: I implement all changes and manage your campaigns for 30 days.</p>
+</section>
+
+<!-- Contact Section -->
+<footer id="contact">
+  <p>Ready to maximize your Google Ads results?</p>
+  <div class="cta-row" style="justify-content:center; margin-top:20px; gap:16px;">
+    <div id="google-calendar-button-footer"></div>
+    <a href="tel:+16473545557" class="btn-ghost">Call: 647-354-5557</a>
+    <a href="mailto:Harrygrowthhub@yahoo.com" class="btn-ghost">Email: Harrygrowthhub@yahoo.com</a>
+  </div>
+</footer>
+```
+
+  </div>
+  <script>
+    // Load footer booking button
+    window.addEventListener('load', function() {
+      var target = document.getElementById('google-calendar-button-footer');
+      if(target){
+        setTimeout(function(){
+          calendar.schedulingButton.load({
+            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z8xm09LOp6P8V6MXb2_3ZfrDYGHhQkHiV9hbrIoqjJDqFuwTwDSqPReSnzabreM3lSK7h_Xyn?gv=true',
+            color: '#FFA500',
+            label: 'Book Your Discovery Call',
+            target: target
+          });
+        }, 1000);
+      }
+    });
+  </script>
+</body>
+</html>
